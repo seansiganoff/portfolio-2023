@@ -1,0 +1,127 @@
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+}
+
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    padding: 8rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-container h1 {
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: rgb(0, 127, 206);
+}
+
+.about-container h4 {
+    font-weight: 100;
+    word-spacing: 2px;
+    color: rgb(60, 60, 60);
+}
+
+.about-container p, .about-container li {
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.about-container ul {
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+}
+
+.about-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 6rem 3rem 4rem;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.103);
+}
+
+.interest-text {
+    display: block;
+    justify-content: center;
+    align-items: center;  width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 3rem 4rem;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.103);
+}
+
+.interest-text li {
+    line-height: 25px;
+    font-size: medium;
+}
+
+.photo-container {
+    position: absolute;
+    
+    
+    
+}
+
+.photo-container img {
+    border-radius: 500px;
+    border: 2px solid rgb(1, 91, 146);
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.21);
+    transition: all ease-in-out 0.7s;
+}
+
+
+
+.photo-container2 {
+    display: none;
+}
+
+.interest-text ul {
+    list-style: inside;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .about-container {
+        display: block;
+    }
+
+    .about-container p {
+        font-size: 20px;
+    }
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .photo-container {
+        position: relative;
+    }
+    .photo-container {
+        display: none;
+    }
+    .photo-container2 {
+        display: block;
+    }
+    .interest-text {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+}
