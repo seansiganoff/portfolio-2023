@@ -1,15 +1,31 @@
 
+
 .projects {
+    display: block;
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    padding: 8rem 0;
 }
+
+.projects-inner {
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.projects h1 {
+    font-size: 15vw;
+    color: rgb(242, 242, 242);
+    bottom: 350px;
+    letter-spacing: 25px;
+}
+
+
 .projects-container {
     color: rgb(52, 52, 52);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem;
+    padding: 0 3rem 3rem 3rem;
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -17,9 +33,28 @@
 
 .card-div img {
     width: 350px;
-    object-fit: cover;
     aspect-ratio: 3/2;
     margin: 50px 25px;
     border-radius: 30px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.212);
+}
+
+
+@media screen and (max-width: 1700px) {
+    .projects-container {
+        width: 100%;
+        padding: 3rem 0 0 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .card-div img {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects h1 {
+        letter-spacing: 3vw;
+    }
+    
 }

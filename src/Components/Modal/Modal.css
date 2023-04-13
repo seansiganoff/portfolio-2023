@@ -9,13 +9,19 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    max-width: 50%;
+    max-width: 90%;
+    max-height: 60vh;
+}
+.modal img {
+    width: 300px;
 }
 
+
+
 .close {
-    font-size: 60px;
+    font-size: 30px;
     padding: 1rem;
-    margin: 10px;
+    margin: 5px;
     background-color: black;
     border: none;
     color: white;
@@ -56,4 +62,27 @@
 
 .view-buttons a:visited {
     color: white;
+}
+@media screen and (max-width: 700px) {
+    .view-buttons {
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .modal {
+        max-width: 95vw;
+        max-height: 90vh;
+    }
+    .modal img {
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .view-buttons {
+        font-size: x-small;
+    }
+
+    .modal {
+        font-size: xx-small;
+    }
 }

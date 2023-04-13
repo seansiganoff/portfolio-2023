@@ -1,5 +1,20 @@
 
 .about {
+    display: block;
+    background-color: rgb(249, 249, 249);
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 15vw;
+    color: rgba(255, 255, 255, 0.877);
+    bottom: 350px;
+    letter-spacing: 25px;
+}
+
+
+
+.about-inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +27,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: top;
-    padding: 8rem 0;
     overflow: hidden;
     position: relative;
+    padding: 3rem 0 9rem 0;
 }
 
 .about-container h1 {
@@ -98,12 +113,14 @@
     .about-container {
         display: block;
     }
+    .interest-text {
+        padding: 3rem 0;
+    }
 
     .about-container p {
         font-size: 20px;
     }
     .about {
-        display: flex;
         flex-wrap: wrap;
         padding: 0;
     }
@@ -123,5 +140,9 @@
     .about-text {
         width: 100%;
         padding: 3rem 2rem;
+    }
+
+    .about-text, .interest-text {
+        background-color: rgb(249, 249, 249);
     }
 }

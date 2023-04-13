@@ -19,10 +19,12 @@ const About = () => {
       exit={{ opacity: 0, transition: { duration: 1 } }}
       variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
       className="about">
-        
+        <h1>ABOUT</h1>
+        <div className='about-inner'>
+          
         <div className='about-container'>
           <motion.div variants={itemVariants} className='about-text'>
-                <h1>MY JOURNEY</h1>
+                <h2>MY JOURNEY</h2>
                 <br />
                 <motion.p variants={itemVariants}>
                   I fell in love with programming at the age of 12. But my family was set on me learning the family business.
@@ -39,12 +41,11 @@ const About = () => {
                 </motion.p>
           </motion.div>
           <div className='photo-container2'>
-          <img src={require('../../images/me1.jpg')} alt='project' style={{width: "100%"}}/>
-        </div>
+            <img src={require('../../images/me1.jpg')} alt='project' style={{width: "100%"}}/>
+          </div>
           <motion.div variants={itemVariants} className='interest-text'>
-                <h1>MY INTERESTS</h1>
+                <h2>MY INTERESTS</h2>
                 <br />
-                
                   <ul>
                     <li>Family</li>
                     <li>Friends</li>
@@ -62,6 +63,7 @@ const About = () => {
         </div>
         <div className='photo-container'>
           <img src={require('../../images/me1.jpg')} alt='' style={{width: "300px", height: "300px"}}/>
+        </div>
         </div>
         
        

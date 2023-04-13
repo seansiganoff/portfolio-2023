@@ -20,10 +20,10 @@ const Nav = () => {
       exit={{ opacity: 0, transition: { duration: 3 } }}
      className='nav-container'>
         <ul>
-          <motion.li variants={itemVariants}><NavLink to="/">Home</NavLink></motion.li>
-          <motion.li variants={itemVariants}><NavLink to="/about">About</NavLink></motion.li>
-          <motion.li variants={itemVariants}><NavLink to="/projects">Projects</NavLink></motion.li>
-          <motion.li variants={itemVariants}><NavLink to="/about">About</NavLink></motion.li>
+        <motion.li variants={itemVariants}><NavLink to="/about">LINKEDIN</NavLink></motion.li>
+          <motion.li variants={itemVariants}><NavLink to="/">CALL</NavLink></motion.li>
+          <motion.li variants={itemVariants}><NavLink to="/projects">EMAIL</NavLink></motion.li>
+          <motion.li variants={itemVariants}><NavLink to="/about">GITHUB</NavLink></motion.li>
         </ul>
     </motion.div>
   )

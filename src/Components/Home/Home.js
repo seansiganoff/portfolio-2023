@@ -19,7 +19,7 @@ const Home = () => {
       <motion.img variants={{
           hidden: { opacity: 0, y: 940 },
           visible: { opacity: 1, y: 0, x: 0, transition: { duration: 1 } }
-        }} src={require('../../images/se.jpg') } alt='computer background' style={{maxHeight: "88vh", paddingTop: '10px'}} />
+        }} src={require('../../images/se.jpg') } alt='computer background' style={{maxHeight: "100vh", paddingTop: '110px'}} />
       <motion.div
         variants={{
           hidden: { opacity: 0 },
@@ -38,6 +38,7 @@ const Home = () => {
         
       
       </motion.div>
+      
     </motion.div>
   )
 }

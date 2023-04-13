@@ -20,7 +20,10 @@ const Projects = () => {
 console.log(selectedProject)
   return (
     <div className='projects'>
-        <h1>PROJECTS</h1>
+      <h1>PROJECTS</h1>
+    
+    <div className='projects-inner'>
+        
         <div className='projects-container'>
 
           <motion.div className="save-button card-div" 
@@ -79,6 +82,7 @@ console.log(selectedProject)
           
           
         </div>
+    </div>
     </div>
   )
 }
