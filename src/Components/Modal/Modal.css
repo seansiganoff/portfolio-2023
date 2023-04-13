@@ -10,7 +10,7 @@
     align-items: center;
     color: white;
     max-width: 90%;
-    max-height: 60vh;
+    max-height: 80vh;
 }
 .modal img {
     width: 300px;
@@ -63,6 +63,13 @@
 .view-buttons a:visited {
     color: white;
 }
+
+@media screen and (max-width: 1300px) {
+    .modal p {
+        font-size: small;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .view-buttons {
         width: 30vw;
@@ -80,9 +87,24 @@
 @media screen and (max-width: 500px) {
     .view-buttons {
         font-size: x-small;
+        margin: 0;
     }
 
     .modal {
+        padding: 15px;
+    }
+    .modal-buttons-div {
+        padding: 20px 0 0 0;
+        justify-content: space-around;
+    }
+
+    .modal p {
         font-size: xx-small;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .modal p {
+        font-size: 10px;
     }
 }

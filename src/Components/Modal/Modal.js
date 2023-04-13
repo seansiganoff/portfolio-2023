@@ -59,7 +59,7 @@ const Modal = ({ handleClose, text, selectedInfo}) => {
                 <button className='close' onClick={handleClose}>X</button>
             </div>
             <img src={imgUrl} style={{ aspectRatio: "3/2", borderRadius: '30px', boxShadow: "0px 0px 10px 0px white"}} alt='Tetris thumbnail' /><br /><br />
-            {description}
+            <p>{description}</p>
             <div className='modal-buttons-div'>
                 <button className='view-buttons'><Link to={url}>View</Link></button> 
                 <button className='view-buttons'><Link to='https://github.com/seansiganoff'>GitHub</Link></button>

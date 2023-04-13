@@ -112,10 +112,9 @@
 @media screen and (max-width: 1000px) {
     .about-container {
         display: block;
+        padding: 0;
     }
-    .interest-text {
-        padding: 3rem 0;
-    }
+    
 
     .about-container p {
         font-size: 20px;
@@ -133,13 +132,18 @@
     .photo-container2 {
         display: block;
     }
+    
     .interest-text {
+        border-radius: 0;
+        box-shadow: none;
         width: 100%;
     }
 
     .about-text {
         width: 100%;
         padding: 3rem 2rem;
+        border-radius: 0;
+        box-shadow: none;
     }
 
     .about-text, .interest-text {
