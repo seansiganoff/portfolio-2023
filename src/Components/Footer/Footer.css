@@ -56,4 +56,15 @@
     .footer {
         padding: 3rem 0;
     }
+    .footer h1 {
+        font-size: large;
+    }
+
+    .footer-link {
+        font-size: medium;
+        padding: 10px;
+    }
+    .contacts {
+        font-size: smaller;
+    }
 }

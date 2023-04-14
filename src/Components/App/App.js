@@ -3,7 +3,6 @@ import './App.css';
 import Nav from '../Nav/Nav';
 import About from '../About/About';
 import { BrowserRouter } from 'react-router-dom';
-import Home from '../Home/Home';
 import Projects from '../Projects/Projects';
 import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
@@ -11,6 +10,8 @@ import { projects } from '../../ProjectInfo';
 import React from 'react';
 import Skills from '../Skills/Skills';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+
 
 export const Context = React.createContext();
 
@@ -23,7 +24,7 @@ function App() {
       <BrowserRouter>
       <Context.Provider value={[projectInfo, setProjectInfo]}>
         <Nav />
-        <Home />
+        <Header />
         <About />
         <Projects />
         <Skills />

@@ -73,12 +73,22 @@
     .skills-list {
         display: block;
     }
+    .icons-div {
+        padding: 1rem 0;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .icons-div img {
+        width: 12vw;
+    }
 }
 
 
 @media screen and (max-width: 700px) {
     .skills {
-        padding: 0 0 5rem 0;
+        padding: 0 0 2rem 0;
+
     }
     .skills-container {
         width: 100%;
@@ -92,6 +102,15 @@
         color: rgb(255, 255, 255);
     }
 }
+@media screen and (max-width: 600px) {
+    .skills-list li {
+        font-size: smaller;
+    }
+    .skills-list ul {
+        padding: 1rem;
+        list-style: inside;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .skills-container {
@@ -101,7 +120,8 @@
         padding: 0 1rem;
     }
 
-    .icons-div img {
-        width: 40vw;
+    .skills-container h3 {
+        font-size: medium;
     }
+    
 }

@@ -8,13 +8,12 @@
 
 .projects-inner {
     text-align: center;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 }
 
 .projects h1 {
     font-size: 15vw;
     color: rgb(242, 242, 242);
-    bottom: 350px;
     letter-spacing: 25px;
 }
 
@@ -37,6 +36,11 @@
     margin: 50px 25px;
     border-radius: 30px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.212);
+    transition: all ease-in-out 0.3s;
+}
+
+.card-div img:hover {
+    box-shadow: 0px 0px 50px 5px rgb(0, 127, 206);
 }
 
 
@@ -50,11 +54,18 @@
     .card-div img {
         width: 70vw;
     }
+    .projects-inner {
+        padding-bottom: 3;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .projects h1 {
         letter-spacing: 3vw;
+    }
+
+    .projects-inner {
+        padding-bottom: 3rem;
     }
     
 }
