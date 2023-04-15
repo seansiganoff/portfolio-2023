@@ -20,8 +20,8 @@ const About = () => {
     <div className="about-section" >
         <h1>ABOUT</h1>
         <div className='about-inner'>
-          <div className='about-container' ref={ref} >
-            <div className='about-text' style={{
+          <div className='about-container'  >
+            <div className='about-text' ref={ref} style={{
           transform: isInView ? "none" : "translateX(-400px)",
           opacity: isInView ? 1 : 0,
           transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
