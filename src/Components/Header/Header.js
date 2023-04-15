@@ -64,7 +64,7 @@ const Home = () => {
           <h1 className='developer' style={{transform: `translateY(${offSetY * 2}px)`}}>DEVELOPER</h1>
           <h1 className='full-stack' style={{transform: `translateY(${offSetY * 1.8}px)`}}>FULL-STACK</h1>
           <h1 className='front-end' style={{transform: `translateY(-${offSetY * 0.4}px)`}}>FRONT-END</h1>
-          <h1 className='back-end' style={{transform: `translateY(-${offSetY * 0.8}px)`}}>BACK-END</h1>
+          <h1 className='back-end' style={{transform: `translateY(-${offSetY * 1.8}px)`}}>BACK-END</h1>
     </motion.div>
 
   )

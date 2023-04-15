@@ -1,6 +1,6 @@
 
 .header {
-  height: 150vh;
+  height: 120vh;
   overflow: hidden;
   position: relative;
 }
@@ -153,4 +153,31 @@
 
 
 
+@media screen and (max-width: 700px) {
+  .header {
+    height: 100vh;
+  }
+  .software-text {
+    font-size: xx-large;
+    left: -30%;
+  }
 
+  .full-stack {
+    font-size: 50px;
+    left: 10%;
+  }
+
+  .front-end {
+    font-size: 23px;
+    left: 60%;
+  }
+  .back-end {
+    font-size: 50px;
+  }
+
+  .developer {
+    font-size: 25px;
+    left: 50%;
+    top: -35%;
+  }
+}
