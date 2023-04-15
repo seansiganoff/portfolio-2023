@@ -8,9 +8,7 @@ import { useRef } from 'react';
 
 const About = () => {
   const ref = useRef(null);
-  const ref2 = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const isInView2 = useInView(ref2, {once: true});
 
 
   
@@ -20,8 +18,8 @@ const About = () => {
     <div className="about-section" >
         <h1>ABOUT</h1>
         <div className='about-inner'>
-          <div className='about-container'  >
-            <div className='about-text' ref={ref} style={{
+          <div className='about-container' ref={ref} >
+            <div className='about-text'  style={{
           transform: isInView ? "none" : "translateX(-400px)",
           opacity: isInView ? 1 : 0,
           transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
@@ -45,9 +43,9 @@ const About = () => {
             <div className='photo-container2'>
               <img src={require('../../images/sean.jpg')} alt='project' style={{width: "100%"}}/>
             </div>
-            <div  className='interest-text' ref={ref2} style={{
-          transform: isInView2 ? "none" : "translateX(400px)",
-          opacity: isInView2 ? 1 : 0,
+            <div  className='interest-text' ref={ref} style={{
+          transform: isInView ? "none" : "translateX(400px)",
+          opacity: isInView ? 1 : 0,
           transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }}>
                   <h2>MY INTERESTS</h2>
