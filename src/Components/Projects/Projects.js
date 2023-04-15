@@ -1,31 +1,25 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './Projects.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import Modal from '../Modal/Modal';
-import { Context } from '../App/App';
 
 const Projects = () => {
-  const [modalOpen, setModalOpen] = useState();
-  const [projectInfo, setProjectInfo] = useContext(Context);
-  const [selectedInfo, setSelectedInfo] = useState();
-  const [selectedProject, setSelectedProject] = useState();
+  const [modalOpen, setModalOpen] = useState();// sets the modal to open or close
+  const [selectedInfo, setSelectedInfo] = useState();//sets the info for the project that is selected
 
 
-  
+  //model setters
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
 
   
 
-console.log(selectedProject)
   return (
     <div className='projects'>
-      <h1>PROJECTS</h1>
-    
+    <h1>PROJECTS</h1>
     <div className='projects-inner'>
-        
         <div className='projects-container'>
-
+          {/* Motion divs are for the modal */}
           <motion.div className="save-button card-div" 
           whileTap={{scale: 0.9}} 
           onClick={() => (modalOpen ? close() : setSelectedInfo("bugTrackerApp"), open())} >
@@ -64,6 +58,7 @@ console.log(selectedProject)
           <AnimatePresence
             initial={false}
           >
+            {/* if modal is open it renders the modal and passes props for the correct project to be displayed */}
             {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} selectedInfo={selectedInfo}/>}
 
           </AnimatePresence>

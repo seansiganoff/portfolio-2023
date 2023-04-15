@@ -11,18 +11,25 @@ const Modal = ({ handleClose, text, selectedInfo}) => {
   const [url, setUrl] = useState()
   const [imgUrl, setImgUrl] = useState();
   const [description, setDescription] = useState();
+  const [gitHubURL, setGitHubURL] = useState();
    
     
 
+
+
+
   useEffect(() => {
+    //if selected info that was passed from the projects component is true, it will set all the info for the modal
     if(selectedInfo) {
-        setImgUrl(projectInfo[0][selectedInfo].imgUrl);
+        setImgUrl(projectInfo[0][selectedInfo].imgUrl); 
         setDescription(projectInfo[0][selectedInfo].description)
         setUrl(projectInfo[0][selectedInfo].url)
+        setGitHubURL(projectInfo[0][selectedInfo].githubURL);
     }
-  }, [setProjectInfo, projectInfo, selectedInfo])
+  }, [selectedInfo, projectInfo])
     
- 
+
+
     const dropin = {
         hidden: {
             x: "-100vh",
@@ -62,7 +69,7 @@ const Modal = ({ handleClose, text, selectedInfo}) => {
             <p>{description}</p>
             <div className='modal-buttons-div'>
                 <button className='view-buttons'><Link to={url}>View</Link></button> 
-                <button className='view-buttons'><Link to='https://github.com/seansiganoff'>GitHub</Link></button>
+                <button className='view-buttons'><Link to={gitHubURL}>GitHub</Link></button>
             </div>
         </motion.div>
     </Backdrop>

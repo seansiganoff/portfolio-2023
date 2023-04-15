@@ -1,48 +1,55 @@
 import React from 'react'
 import './About.css';
-import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
+
+
 
 const About = () => {
+  const ref = useRef(null);
+  const ref2 = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const isInView2 = useInView(ref2, {once: true});
 
 
-  const visible = { opacity: 1, y: 0, transition: { duration: 2 } };
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible
-  };
-
+  
 
   return (
-    <motion.div 
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0, transition: { duration: 1 } }}
-      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-      className="about">
+    //motion is from framer motion. Used for transitions.
+    <div className="about-section" >
         <h1>ABOUT</h1>
         <div className='about-inner'>
-          <div className='about-container'>
-            <motion.div variants={itemVariants} className='about-text'>
+          <div className='about-container' ref={ref} >
+            <div className='about-text' style={{
+          transform: isInView ? "none" : "translateX(-400px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>
                   <h2>MY JOURNEY</h2>
                   <br />
-                  <motion.p variants={itemVariants}>
-                    I fell in love with programming at the age of 12. But my family was set on me learning the family business.
+                  <p>
+                    I fell in love with programming at the age of 12 but I had already started learning the family business.
                     After graduating college, I opened and operated a mechanic shop for the next 19 years. 
-                    After almost 20 years, I've decided to do get back to what I love doing, computers.<br /><br />
+                    After 19 years, I've decided to do get back to what I love doing, computers.<br /><br />
 
-                    I started studying online at Codecademy.com, Udemy.com and other resources for 1 year. The pandemic was still strong so I decided to attend a bootcamp. After looking into numerous bootcamps, I decided to go with the one who had to best track record, Full Stack Academy in NYC. 
-                    After graduating, I decided to do some freelance work. And now I'm ready to start working.
+                    I started studying online at Codecademy.com, Udemy.com and other resources for about 1 year. The pandemic was still strong so I decided to attend a bootcamp. After looking into numerous bootcamps, I decided to go with the one who had to best track record, Full Stack Academy in NYC. 
+                    After graduating, I decided to do some freelance work, and now I'm ready to start working.
               
                     <br /><br />
                     As a software engineer, I'm passionate about creating intuitive, user-friendly web applications that meet the needs of users and businesses alike.
                     And I'm committed to writing clean, maintainable, and scalable code that adheres to best practices and coding standards.
 
-                  </motion.p>
-            </motion.div>
-            <div className='photo-container2'>
-              <img src={require('../../images/me1.jpg')} alt='project' style={{width: "100%"}}/>
+                  </p>
             </div>
-            <motion.div variants={itemVariants} className='interest-text'>
+            <div className='photo-container2'>
+              <img src={require('../../images/sean.jpg')} alt='project' style={{width: "100%"}}/>
+            </div>
+            <div  className='interest-text' ref={ref2} style={{
+          transform: isInView2 ? "none" : "translateX(400px)",
+          opacity: isInView2 ? 1 : 0,
+          transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}>
                   <h2>MY INTERESTS</h2>
                   <br />
                     <ul>
@@ -51,20 +58,21 @@ const About = () => {
                       <li>Movies</li>
                       <li>Meeting New People</li>
                       <li>Tech</li>
-                      <li>Vacationing</li>
                       <li>Game Night</li>
                       <li>Comedy Shows</li>
                       <li>Fishing</li>
                       <li>Good Food</li>
+                      <li>Puzzles</li>
+                      <li>Trying New Things</li>
                     </ul>
-                    <div className='photo-container'>
-              <img src={require('../../images/me1.jpg')} alt='' style={{width: "300px", height: "300px"}}/>
+                    
             </div>
-            </motion.div>
-            
+            <div className='photo-container' >
+                      <img src={require('../../images/sean.jpg')} alt='' style={{width: "300px", height: "300px"}}/>
+                    </div>
           </div>
         </div>
-      </motion.div>
+      </div>
   )
 }
 

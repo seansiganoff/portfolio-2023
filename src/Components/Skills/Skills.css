@@ -4,7 +4,7 @@
     width: 100%;
     display: block;
     background-color: rgb(247, 247, 247);
-    padding: 0rem 3rem 8rem 3rem;
+    padding: 0rem 3rem 7rem 3rem;
     text-align: center;
 }
 
@@ -46,8 +46,7 @@
 
 .skills-container h3 {
     font-weight: 500;
-    
-    word-spacing: 5px;
+    word-spacing: 3px;
 }
 
 .skills-container p {

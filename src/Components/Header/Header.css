@@ -2,7 +2,7 @@
 .header {
   height: 150vh;
   overflow: hidden;
-  
+  position: relative;
 }
 
 
@@ -12,34 +12,145 @@
   align-items: center;
   text-align: center;
   padding: 5rem 2rem;
-  z-index: -5;
-  position: relative;
-  top: 13%;
-  left: 15%;
-  font-size: 10vw;
-  color: rgb(225, 225, 225);
+  z-index: -3;
+  position: absolute;
+  top: -20%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  color: rgb(245, 245, 245);
 }
 
-.engineer-text {
-  font-size: 10vw;
-  color: rgb(0, 0, 0);
-  position: relative;
-  left: 30%;
-  bottom: 5%;
+.front-end {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem;
   z-index: -3;
+  font-size: 3vw;
+  color: rgb(234, 234, 234);
+  position: absolute;
+  bottom: -15%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.developer {
+  font-size: 3vw;
+  color: rgba(245, 245, 245, 0.678);
+  position: absolute;
+  top: -15%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  word-spacing: 5px;
+  position: absolute;
+}
+
+.back-end {
+  font-size: 7vw;
+  color: rgb(239, 239, 239);
+  position: absolute;
+  bottom: -15%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: -4;
+  word-spacing: 5px;
+}
+.full-stack {
+  font-size: 7vw;
+  color: rgba(206, 206, 206, 0.144);
+  position: absolute;
+  top: -10%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
   word-spacing: 5px;
 }
 
-.title {
+
+/* From here down: this is for the intro text "Hi, im Sean Siganoff" */
+.header-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
   font-size: 5vw;
   z-index: 1;
   color: rgb(16, 155, 241);
-  position: relative;
-  top: -20%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  word-spacing: 5px;
+  word-spacing: 7px;
   text-shadow: 0 0 15px rgba(139, 139, 139, 0.61);
+  letter-spacing: -2px;
 }
+.h {
+  top: 40%;
+  left: 10%;
+}
+.i {
+  top: 40%;
+  left: 14%;
+}
+.I {
+  top: 40%;
+  left: 18%;
+}
+.a {
+  top: 40%;
+  left: 21.5%;
+}
+.m {
+  top: 40%;
+  left: 25%;
+}
+.s {
+  top: 40%;
+  left: 31.5%;
+}
+.e {
+  top: 40%;
+  left: 34%;
+}
+.A {
+  top: 40%;
+  left: 37%;
+}
+.n {
+  top: 40%;
+  left: 40.5%;
+}
+.S {
+  top: 40%;
+  left: 46.5%;
+}
+.ii {
+  top: 40%;
+  left: 49.5%;
+}
+.g {
+  top: 40%;
+  left: 51.2%;
+}
+.aa {
+  top: 40%;
+  left: 56%;
+}
+.N {
+  top: 40%;
+  left: 60%;
+}
+.o {
+  top: 40%;
+  left: 64.5%;
+}
+.f {
+  top: 40%;
+  left: 69.5%;
+}
+.F {
+  top: 40%;
+  left: 72.5%;
+}
+
+
+
+
 

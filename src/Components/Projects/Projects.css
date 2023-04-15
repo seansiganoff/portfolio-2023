@@ -8,7 +8,8 @@
 
 .projects-inner {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
+    overflow: hidden;
 }
 
 .projects h1 {
@@ -28,12 +29,13 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .card-div img {
     width: 350px;
     aspect-ratio: 3/2;
-    margin: 50px 25px;
+    margin: 50px 25px 0 25px;
     border-radius: 30px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.212);
     transition: all ease-in-out 0.3s;
