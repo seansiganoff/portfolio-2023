@@ -111,9 +111,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .skills-container {
-        padding: 3rem 0;
-    }
+    
     .skills-container h3 {
         padding: 0 1rem;
     }
