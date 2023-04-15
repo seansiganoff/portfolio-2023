@@ -21,8 +21,8 @@ const Footer = () => {
         <div className='footer-mobile-view'>
             <h1>CONTACTS</h1>
             <div className='mobile-contacts-container'>
-              <div><Link to="tel:954-937-2090"><img src={require('../../images/phone-icon.png')} /></Link></div>
-              <div><Link to="sms:954-937-2090"><img src={require('../../images/text-icon.png')} /></Link></div>
+              <div><Link to="tel:954-937-2090"><img alt='' src={require('../../images/phone-icon.png')} /></Link></div>
+              <div><Link to="sms:954-937-2090"><img alt='' src={require('../../images/text-icon.png')} /></Link></div>
               <div><Link to="mailto:seansiganoff83@gmail.com"><img src={require('../../images/email-icon.webp')} /></Link></div>
             </div>
         </div>
