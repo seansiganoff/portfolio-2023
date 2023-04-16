@@ -6,7 +6,7 @@
     padding: 3rem;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: top;
     color: rgb(0, 0, 0);;
     flex-wrap: wrap;
     text-align: center;
@@ -16,7 +16,7 @@
 /* Hides the mobile view contact icons untill the view width in less then 1000px */
 .footer-mobile-view {
     display: none;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .footer-div {
@@ -46,23 +46,45 @@
     color: rgb(0, 127, 206);
 }
 
-.footer-link {
+.footer-links-div h1 {
+    margin-bottom: 40px;
+}
+
+.footer-links-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links-div button {
     padding: 1rem;
     background-color: rgb(0, 0, 0);
-    margin: 15px auto;
+    margin-bottom: 20px;
     border-radius: 30px;
     border: 1px solid rgb(0, 127, 206);
     color: white;
     font-size: large;
     width: 300px;
+    cursor: pointer;
+    transition: all ease-in 0.1s;
 }
+
+.footer-links-div button:hover {
+    scale: 1.1;
+    background: rgb(0, 157, 255);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+}
+
 
 .contacts {
     margin: 10px;
     color: white;
 }
 
-
+.footer-contacts-div h1 {
+    margin-bottom: 40px;
+}
 
 .contacts a:link, .footer a:link, .footer a:visited {
     color: white;
@@ -91,9 +113,13 @@
     }
     .footer {
         padding: 3rem 0;
+        word-break: break-all;
     }
-    .footer h1 {
-        font-size: large;
+
+    .footer-links-div button {
+        font-size: small;
+        width: auto;
+        padding: 1rem 2rem;
     }
 
     .footer-link {
@@ -102,5 +128,6 @@
     }
     .contacts {
         font-size: smaller;
+        
     }
 }

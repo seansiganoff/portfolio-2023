@@ -3,16 +3,22 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+  //redirect to selected link (LinkedIn / GitHUb);
+  const onRedirect = (link) => {
+    window.location.href = link;
+  }
+
+
   return (
     <div className='footer'>
         <div className='footer-links-div'>
             <h1>LINKS</h1>
-            <div className='footer-link'><Link to="https://www.linkedin.com/in/seansiganoff/">LinkedIn</Link></div>
-            <div className='footer-link'><Link to="https://github.com/seansiganoff">GitHub</Link></div>
-            
+            <button onClick={() => onRedirect("https://www.linkedin.com/in/seansiganoff/")}>LinkedIn</button>
+            <button onClick={() => onRedirect("https://www.linkedin.com/in/seansiganoff/")}>GitHub</button>            
         </div>
         <div className='footer-contacts-div'>
-            <h1>CONTACTS</h1>
+            <h1>CONTACT ME</h1>
             <div className='contacts'><Link to="tel:954-937-2090">phone: 954-937-2090</Link></div>
             <div className='contacts'><Link to="mailto:seansiganoff83@gmail.com">email: seansiganoff83@gmail.com</Link></div>
         </div>
