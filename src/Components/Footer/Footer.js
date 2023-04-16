@@ -15,7 +15,7 @@ const Footer = () => {
         <div className='footer-links-div'>
             <h1>LINKS</h1>
             <button onClick={() => onRedirect("https://www.linkedin.com/in/seansiganoff/")}>LinkedIn</button>
-            <button onClick={() => onRedirect("https://www.linkedin.com/in/seansiganoff/")}>GitHub</button>            
+            <button onClick={() => onRedirect("https://github.com/seansiganoff")}>GitHub</button>            
         </div>
         <div className='footer-contacts-div'>
             <h1>CONTACT ME</h1>
