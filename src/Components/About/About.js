@@ -9,6 +9,7 @@ import { useRef } from 'react';
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  
 
 
   
@@ -16,15 +17,12 @@ const About = () => {
   return (
     //motion is from framer motion. Used for transitions.
     <div className="about-section" >
-        <h1>ABOUT</h1>
+        <h1 style={{transform: isInView ? "none" : "translatex(-1000px)", opacity: isInView ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} 
+        >ABOUT</h1>
         <div className='about-inner'>
           <div className='about-container' ref={ref} >
-            <div className='about-text'  style={{
-          transform: isInView ? "none" : "translateX(-400px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}>
-                  <h2>MY JOURNEY</h2>
+            <div className='about-text'  style={{ transform: isInView ? "none" : "translateX(-400px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+                  <h2 style={{transform: isInView ? "none" : "translatey(1000px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>MY JOURNEY</h2>
                   <br />
                   <p>
                     I fell in love with programming at the age of 12 but I had already started learning the family business.
@@ -43,12 +41,11 @@ const About = () => {
             <div className='photo-container2'>
               <img src={require('../../images/sean.jpg')} alt='project' style={{width: "100%"}}/>
             </div>
-            <div  className='interest-text' ref={ref} style={{
-          transform: isInView ? "none" : "translateX(400px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 1.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}>
-                  <h2>MY INTERESTS</h2>
+            <div  
+            className='interest-text' 
+            ref={ref} //This is the on scroll effect. 
+            style={{transform: isInView ? "none" : "translatey(-1000px)",opacity: isInView ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+                  <h2 style={{transform: isInView ? "none" : "translatex(1000px)", opacity: isInView ? 1 : 0, transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>MY INTERESTS</h2>
                   <br />
                     <ul>
                       <li>Family</li>

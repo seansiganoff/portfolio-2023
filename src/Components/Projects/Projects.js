@@ -2,10 +2,14 @@ import React, {  useState } from 'react';
 import './Projects.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import Modal from '../Modal/Modal';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const Projects = () => {
   const [modalOpen, setModalOpen] = useState();// sets the modal to open or close
   const [selectedInfo, setSelectedInfo] = useState();//sets the info for the project that is selected
+  const ref = useRef(null);
+  const isInViewProjects = useInView(ref, { once: true });
 
 
   //model setters
@@ -16,9 +20,11 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-    <h1>PROJECTS</h1>
-    <div className='projects-inner'>
-        <div className='projects-container'>
+    <h1 style={{transform: isInViewProjects ? "none" : "translatex(-1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+      PROJECTS
+    </h1>
+    <div ref={ref} className='projects-inner'>
+        <div style={{transform: isInViewProjects ? "none" : "translatex(1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className='projects-container'>
           {/* Motion divs are for the modal */}
           <motion.div className="save-button card-div" 
           whileTap={{scale: 0.9}} 
