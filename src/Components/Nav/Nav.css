@@ -65,7 +65,7 @@ a:link {
 
 @media  screen and (max-width: 750px) {
     .nav-container li {
-        font-size: x-small;
+        font-size: small;
     }
     
 }
