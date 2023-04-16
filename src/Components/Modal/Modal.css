@@ -11,6 +11,7 @@
     color: white;
     max-width: 90%;
     max-height: 80vh;
+    overflow: hidden;
 }
 .modal img {
     width: 300px;

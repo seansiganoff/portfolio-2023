@@ -10,6 +10,7 @@
     color: rgb(0, 0, 0);;
     flex-wrap: wrap;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Hides the mobile view contact icons untill the view width in less then 1000px */

@@ -4,6 +4,7 @@
     display: block;
     background-color: rgb(255, 255, 255);
     text-align: center;
+    overflow: hidden;
 }
 
 .projects-inner {

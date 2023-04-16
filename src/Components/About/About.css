@@ -3,6 +3,7 @@
     display: block;
     background-color: rgb(247, 247, 247);
     text-align: center;
+    overflow: hidden;
 }
 
 .about-section h1 {
