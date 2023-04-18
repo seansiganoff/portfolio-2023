@@ -8,7 +8,10 @@
 
 /* italiana font family abor*/
 
-P, li {
-font-family: 'Barlow Condensed', sans-serif;
+P {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+  line-height: 20px;
 }
 

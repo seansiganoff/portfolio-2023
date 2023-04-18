@@ -22,19 +22,27 @@ const About = () => {
         <div className='about-inner'>
           <div className='about-container' ref={ref} >
             <div className='about-text'  style={{ transform: isInView ? "none" : "translateX(-400px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
-                  <h2 style={{transform: isInView ? "none" : "translatey(1000px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>MY JOURNEY</h2>
+                  <h2 style={{transform: isInView ? "none" : "translatey(1000px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+                    MY PROFESSION
+                    </h2>
                   <br />
                   <p>
-                    I fell in love with programming at the age of 12 but I had already started learning the family business.
-                    After graduating college, I opened and operated a mechanic shop for the next 19 years. 
-                    After 19 years, I've decided to do get back to what I love doing, computers.<br /><br />
+                  As a software engineer specializing in the PERN stack. I have a passion for building robust, scalable web applications that provide seamless user experiences.
+                  My expertise lies in using PostgreSQL, Express.js, React, and Node.js to create dynamic and responsive applications.<br /> <br />
 
-                    I started studying online at Codecademy.com, Udemy.com and other resources for about 1 year. The pandemic was still strong so I decided to attend a bootcamp. After looking into numerous bootcamps, I decided to go with the one who had to best track record, Full Stack Academy in NYC. 
-                    After graduating, I decided to do some freelance work, and now I'm ready to start working.
-              
-                    <br /><br />
-                    As a software engineer, I'm passionate about creating intuitive, user-friendly web applications that meet the needs of users and businesses alike.
-                    And I'm committed to writing clean, maintainable, and scalable code that adheres to best practices and coding standards.
+                  I am a self-starter, with a strong sense of ownership and accountability. <br />
+                  I believe in taking a proactive approach to problem-solving, and I am always looking for new and innovative ways to improve the performance and functionality of my applications. <br />
+                  My attention to detail and ability to work collaboratively make me a valuable asset to any team.<br /><br />
+
+                  In addition to my technical skills, I am a great communicator and a reliable team player.
+                  I believe in fostering a positive and collaborative work environment, and I am always willing to lend a helping hand to my colleagues.
+                  I take pride in delivering high-quality work that exceeds expectations and meets the needs of the end-users.<br /><br />
+
+                  In this portfolio, you will find a selection of my most recent and noteworthy projects. <br />
+                  Each project showcases my skills in the PERN stack and highlights my ability to create innovative and user-friendly applications.
+                  I hope that my portfolio will give you a better sense of my skills and expertise as a software engineer and demonstrate my ability to deliver results that exceed expectations.
+                  Thank you for taking the time to review my portfolio, and I look forward to the opportunity to work with you in the future.
+
 
                   </p>
             </div>
@@ -45,21 +53,22 @@ const About = () => {
             className='interest-text' 
             ref={ref} //This is the on scroll effect. 
             style={{transform: isInView ? "none" : "translatey(-1000px)",opacity: isInView ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
-                  <h2 style={{transform: isInView ? "none" : "translatex(1000px)", opacity: isInView ? 1 : 0, transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>MY INTERESTS</h2>
+                  <h2 style={{transform: isInView ? "none" : "translatex(1000px)", opacity: isInView ? 1 : 0, transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+                    MY INTERESTS
+                  </h2>
                   <br />
-                    <ul>
-                      <li>Family</li>
-                      <li>Friends</li>
-                      <li>Movies</li>
-                      <li>Meeting New People</li>
-                      <li>Tech</li>
-                      <li>Game Night</li>
-                      <li>Comedy Shows</li>
-                      <li>Fishing</li>
-                      <li>Good Food</li>
-                      <li>Puzzles</li>
-                      <li>Trying New Things</li>
-                    </ul>
+                    <p>
+                    I enjoy staying active and participating in various sports and outdoor activities. 
+                    Whether it's hiking or playing team sports, I believe that staying active is crucial to maintaining a healthy body and mind. 
+                    I find that physical activity is an excellent way to recharge my creativity and energy, allowing me to approach my work with a fresh perspective.
+                    <br /><br />
+                    I also enjoy reading and staying up-to-date on the latest trends and technologies in software engineering. 
+                    I believe that continuous learning is essential to staying relevant and effective as a software engineer. 
+                    By keeping up with new developments and approaches, I can continue to improve my skills and stay ahead of the curve.
+                    <br /><br />
+                    Overall, I believe that having diverse interests and experiences is crucial to being an effective software engineer. 
+                    By drawing inspiration and lessons from a variety of sources, I can approach my work with a fresh perspective and deliver innovative and user-friendly applications.
+                    </p>
                     
             </div>
             <div className='photo-container' >
