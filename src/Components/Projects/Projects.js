@@ -26,6 +26,13 @@ const Projects = () => {
     <div  className='projects-inner'>
         <div style={{transform: isInViewProjects ? "none" : "translatex(1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className='projects-container'>
           {/* Motion divs are for the modal */}
+
+          <motion.div className="save-button card-div" 
+          whileTap={{scale: 0.9}} 
+          onClick={() => (modalOpen ? close() : setSelectedInfo("rolexApp"), open())} >
+            <img src={require('../../images/rolex-thumbnail.jpg')} alt='Rolex thumbnail' />
+          </motion.div>
+          
           <motion.div className="save-button card-div" 
           whileTap={{scale: 0.9}} 
           onClick={() => (modalOpen ? close() : setSelectedInfo("bugTrackerApp"), open())} >
@@ -38,11 +45,7 @@ const Projects = () => {
             <img src={require('../../images/weather-app2.jpg')} alt='Weather app thumbnail' />
           </motion.div>
 
-          <motion.div className="save-button card-div" 
-          whileTap={{scale: 0.9}} 
-          onClick={() => (modalOpen ? close() : setSelectedInfo("rolexApp"), open())} >
-            <img src={require('../../images/rolex-thumbnail.jpg')} alt='Rolex thumbnail' />
-          </motion.div>
+          
 
           <motion.div className="save-button card-div" 
           whileTap={{scale: 0.9}} 

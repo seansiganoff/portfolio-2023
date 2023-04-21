@@ -28,17 +28,17 @@ const About = () => {
                   <br />
                   <p>
                   As a software engineer specializing in the PERN stack. I have a passion for building robust, scalable web applications that provide seamless user experiences.
-                  My expertise lies in using PostgreSQL, Express.js, React, and Node.js to create dynamic and responsive applications.<br /> <br />
-
-                  I am a self-starter, with a strong sense of ownership and accountability. <br />
-                  I believe in taking a proactive approach to problem-solving, and I am always looking for new and innovative ways to improve the performance and functionality of my applications. <br />
-                  My attention to detail and ability to work collaboratively make me a valuable asset to any team.<br /><br />
-
+                  My expertise lies in using PostgreSQL, Express.js, React, and Node.js to create dynamic and responsive applications.
+                  <br /> <br />
+                  I am a self-starter, with a strong sense of ownership and accountability. 
+                  I believe in taking a proactive approach to problem-solving, and I am always looking for new and innovative ways to improve the performance and functionality of my applications. 
+                  My attention to detail and ability to work collaboratively make me a valuable asset to any team.
+                  <br /><br />
                   In addition to my technical skills, I am a great communicator and a reliable team player.
                   I believe in fostering a positive and collaborative work environment, and I am always willing to lend a helping hand to my colleagues.
-                  I take pride in delivering high-quality work that exceeds expectations and meets the needs of the end-users.<br /><br />
-
-                  In this portfolio, you will find a selection of my most recent and noteworthy projects. <br />
+                  I take pride in delivering high-quality work that exceeds expectations and meets the needs of the end-users.
+                  <br /><br />
+                  In this portfolio, you will find a selection of my most recent and noteworthy projects. 
                   Each project showcases my skills in the PERN stack and highlights my ability to create innovative and user-friendly applications.
                   I hope that my portfolio will give you a better sense of my skills and expertise as a software engineer and demonstrate my ability to deliver results that exceed expectations.
                   Thank you for taking the time to review my portfolio, and I look forward to the opportunity to work with you in the future.
