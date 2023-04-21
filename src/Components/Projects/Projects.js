@@ -19,11 +19,11 @@ const Projects = () => {
   
 
   return (
-    <div className='projects'>
+    <div ref={ref} className='projects'>
     <h1 style={{transform: isInViewProjects ? "none" : "translatex(-1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
       PROJECTS
     </h1>
-    <div ref={ref} className='projects-inner'>
+    <div  className='projects-inner'>
         <div style={{transform: isInViewProjects ? "none" : "translatex(1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className='projects-container'>
           {/* Motion divs are for the modal */}
           <motion.div className="save-button card-div" 

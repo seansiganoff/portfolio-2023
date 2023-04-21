@@ -8,11 +8,11 @@ const Skills = () => {
     const isInViewSkills = useInView(ref, { once: true });
     
   return (
-    <div className='skills'>
+    <div ref={ref} className='skills'>
         <h1 style={{transform: isInViewSkills ? "none" : "translatex(-1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
             SKILLS
         </h1>
-        <div ref={ref} className='skills-container'>
+        <div  className='skills-container'>
             <div className='icons-div'>
                 <img src={require('../../images/jest.png')} alt="jest"  style={{transform: isInViewSkills ? "none" : "translatex(1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 0.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} />
                 <img src={require('../../images/GitHub-Mark-Light-120px-plus.png')} alt="github" style={{transform: isInViewSkills ? "none" : "translateY(1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} />
