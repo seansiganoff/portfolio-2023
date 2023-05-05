@@ -9,11 +9,12 @@ const Skills = () => {
     
   return (
     <div ref={ref} className='skills'>
-        <h1 style={{transform: isInViewSkills ? "none" : "translatex(-1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+        <h1 style={{transform: isInViewSkills ? "none" : "translatex(-1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
             SKILLS
         </h1>
         <div  className='skills-container'>
             <div className='icons-div'>
+                {/* /////////////////////////////////////////////////// skills logo's /////////////////////////////////////////////////////////// */}
                 <img src={require('../../images/jest.png')} alt="jest"  style={{transform: isInViewSkills ? "none" : "translatex(1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 0.2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} />
                 <img src={require('../../images/GitHub-Mark-Light-120px-plus.png')} alt="github" style={{transform: isInViewSkills ? "none" : "translateY(1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} />
                 <img src={require('../../images/css3.png')} alt="css3" style={{transform: isInViewSkills ? "none" : "translateY(1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} />
@@ -26,10 +27,10 @@ const Skills = () => {
                 <img src={require('../../images/node.png')} alt="node" style={{transform: isInViewSkills ? "none" : "translatex(-1000px)", opacity: isInViewSkills ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} />
             </div>
             <br />
-        <h3>PERN STACK ( PostgreSQL, ExpressJS, ReactJS, NodeJS ), JavaScript, HTML, CSS, Jest, Mocha, Chai, Redux, VS Code.</h3>
+        <h3>PERN STACK ( PostgreSQL, ExpressJS, ReactJS, NodeJS, Firebase, MongoDB ), JavaScript, HTML, CSS, Jest, Mocha, Chai, Redux, VS Code.</h3>
         <div className='skills-list'>
             <ul>
-                <li>Front-End development</li><li>UI design</li><li>UX design</li> <li>cross browser compatability</li>   <li>responsive web design</li>   <li>modals</li>   <li>DOM manipulation</li>    
+                <li>Front-End development</li><li>UI design</li><li>UX design</li> <li>cross browser compatibility</li>   <li>responsive web design</li>   <li>modals</li>   <li>DOM manipulation</li>    
             </ul>
             <ul>
                 <li>Back-end development</li><li>Relational database management</li> <li>Database queries</li><li>Data Analysis</li><li>CRUD Operations</li><li>RESTful APIs</li>

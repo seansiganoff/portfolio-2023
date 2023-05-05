@@ -12,21 +12,21 @@ const Projects = () => {
   const isInViewProjects = useInView(ref, { once: true });
 
 
-  //model setters
+  //Modal setters
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
 
   
 
   return (
+        //ref is for page animation
     <div ref={ref} className='projects'>
-    <h1 style={{transform: isInViewProjects ? "none" : "translatex(-1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
+    <h1 style={{transform: isInViewProjects ? "none" : "translatex(-1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
       PROJECTS
     </h1>
     <div  className='projects-inner'>
-        <div style={{transform: isInViewProjects ? "none" : "translatex(1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className='projects-container'>
-          {/* Motion divs are for the modal */}
-
+        <div style={{transform: isInViewProjects ? "none" : "translatex(1000px)", opacity: isInViewProjects ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className='projects-container'>
+          {/*//////////////////////////////////////////// Motion divs are for the modal ////////////////////////////////////////*/}
           <motion.div className="save-button card-div" 
           whileTap={{scale: 0.9}} 
           onClick={() => (modalOpen ? close() : setSelectedInfo("rolexApp"), open())} >
@@ -44,9 +44,6 @@ const Projects = () => {
           onClick={() => (modalOpen ? close() : setSelectedInfo("weatherApp"), open())} >
             <img src={require('../../images/weather-app2.jpg')} alt='Weather app thumbnail' />
           </motion.div>
-
-          
-
           <motion.div className="save-button card-div" 
           whileTap={{scale: 0.9}} 
           onClick={() => (modalOpen ? close() :  setSelectedInfo("bocaExpressApp"), open())} >

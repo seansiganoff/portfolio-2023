@@ -20,7 +20,7 @@ export const projects = {
         githubURL: "https://github.com/seansiganoff/ecommerce",
         url: "https://seans-rolex-watches.netlify.app",
         name: "Rolex Store",
-        description: "This is a imitation Rolex website. Complete, with soft fonts, raised images, perfect margins, soft colors and smooth transitions. Users can browse watches and choose from diffent styles, add items to the shopping cart and checkout using Stripe-Checkout payment system. Built with React.js, CSS, Local Storage and Stripe-Checkout api."
+        description: "This is an imitation Rolex website. Complete, with soft fonts, raised images, perfect margins, soft colors and smooth transitions. Users can browse watches and choose from diffent styles, add items to the shopping cart and checkout using Stripe-Checkout payment system. Built with React.js, CSS, Local Storage and Stripe-Checkout api."
 
     },
     bocaExpressApp: {

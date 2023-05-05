@@ -23,11 +23,11 @@ const About = () => {
           <div className='about-container'>
             <div className='about-text'  style={{ transform: isInView ? "none" : "translateX(-400px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
                   <h2 style={{transform: isInView ? "none" : "translatey(1000px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
-                    MY PROFESSION
+                    OCCUPATION
                     </h2>
                   <br />
                   <p>
-                  As a software engineer specializing in the PERN stack. I have a passion for building robust, scalable web applications that provide seamless user experiences.
+                  As a software engineer specializing in the PERN / Mern stack. I have a passion for building robust, scalable web applications that provide seamless user experiences.
                   My expertise lies in using PostgreSQL, Express.js, React, and Node.js to create dynamic and responsive applications.
                   <br /> <br />
                   I am a self-starter, with a strong sense of ownership and accountability. 
@@ -54,7 +54,7 @@ const About = () => {
             ref={ref} //This is the on scroll effect. 
             style={{transform: isInView ? "none" : "translatey(-1000px)",opacity: isInView ? 1 : 0, transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
                   <h2 style={{transform: isInView ? "none" : "translatex(1000px)", opacity: isInView ? 1 : 0, transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
-                    MY INTERESTS
+                    INTERESTS
                   </h2>
                   <br />
                     <p>
