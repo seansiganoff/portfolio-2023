@@ -28,7 +28,7 @@ const About = () => {
                   <br />
                   <p>
                   As a software engineer specializing in the PERN / Mern stack. I have a passion for building robust, scalable web applications that provide seamless user experiences.
-                  My expertise lies in using PostgreSQL, Express.js, React, and Node.js to create dynamic and responsive applications.
+                  My expertise lies in using PostgreSQL, Firebase, MongoDB, Express.js, React, and Node.js to create dynamic and responsive applications.
                   <br /> <br />
                   I am a self-starter, with a strong sense of ownership and accountability. 
                   I believe in taking a proactive approach to problem-solving, and I am always looking for new and innovative ways to improve the performance and functionality of my applications. 
