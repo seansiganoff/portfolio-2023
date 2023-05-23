@@ -23,11 +23,11 @@ const About = () => {
           <div className='about-container'>
             <div className='about-text'  style={{ transform: isInView ? "none" : "translateX(-400px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
                   <h2 style={{transform: isInView ? "none" : "translatey(1000px)", opacity: isInView ? 1 : 0, transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}}>
-                    OCCUPATION
+                    Me
                     </h2>
                   <br />
                   <p>
-                  As a software engineer specializing in the PERN / Mern stack. I have a passion for building robust, scalable web applications that provide seamless user experiences.
+                  As a software engineer, I have a passion for building robust, scalable web applications that provide seamless user experiences.
                   My expertise lies in using PostgreSQL, Firebase, MongoDB, Express.js, React, and Node.js to create dynamic and responsive applications.
                   <br /> <br />
                   I am a self-starter, with a strong sense of ownership and accountability. 
@@ -38,9 +38,9 @@ const About = () => {
                   I believe in fostering a positive and collaborative work environment, and I am always willing to lend a helping hand to my colleagues.
                   I take pride in delivering high-quality work that exceeds expectations and meets the needs of the end-users.
                   <br /><br />
-                  In this portfolio, you will find a selection of my most recent and noteworthy projects. 
-                  Each project showcases my skills in the PERN stack and highlights my ability to create innovative and user-friendly applications.
-                  I hope that my portfolio will give you a better sense of my skills and expertise as a software engineer and demonstrate my ability to deliver results that exceed expectations.
+                  In the projects section, you will find a selection of my most recent and noteworthy projects. 
+                  Each project showcases my skills and highlights my ability to create innovative and user-friendly applications.
+                  I hope that my portfolio will give you a better sense of my skills and expertise as a software engineer and demonstrates my ability to deliver results that exceed expectations.
                   Thank you for taking the time to review my portfolio, and I look forward to the opportunity to work with you in the future.
 
 
