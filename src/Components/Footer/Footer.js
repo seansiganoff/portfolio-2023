@@ -14,13 +14,13 @@ const Footer = () => {
     <div className='footer'>
         <div className='footer-links-div'>
             <h1>LINKS</h1>
-            <button onClick={() => onRedirect("https://www.linkedin.com/in/seansiganoff/")}>LinkedIn</button>
-            <button onClick={() => onRedirect("https://github.com/seansiganoff")}>GitHub</button>            
+            {/* <button onClick={() => onRedirect("https://www.linkedin.com/in/seansiganoff/")}>LinkedIn</button> */}
+            {/* <button onClick={() => onRedirect("https://github.com/seansiganoff")}>GitHub</button>             */}
         </div>
         <div className='footer-contacts-div'>
             <h1>CONTACT ME</h1>
-            <div className='contacts'><Link to="tel:954-937-2090">phone: 954-937-2090</Link></div>
-            <div className='contacts'><Link to="mailto:seansiganoff83@gmail.com">email: seansiganoff83@gmail.com</Link></div>
+            {/* <div className='contacts'><Link to="tel:954-937-2090">phone: 954-937-2090</Link></div> */}
+            {/* <div className='contacts'><Link to="mailto:seansiganoff83@gmail.com">email: seansiganoff83@gmail.com</Link></div> */}
         </div>
 
         {/* When the view width reaches 1000 or less, it will enable the contact icons for mobile view */}
